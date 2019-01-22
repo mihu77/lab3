@@ -1,4 +1,5 @@
 <?php
+session_start();
 		require_once 'database.php';
 		$query = $db->prepare("INSERT INTO `ankieta` (`1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`) 
 												
@@ -25,4 +26,6 @@
         	$query->bindParam(':nine',$_GET['nine'], PDO::PARAM_STR);
         	$query->bindParam(':ten',$_GET['ten'], PDO::PARAM_STR);
 		$query->execute();
-		header('Location: index.html');
+		header('Location: dziekuje.html');
+		exit();
+?>
