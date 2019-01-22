@@ -5,3 +5,4 @@ return [
 	'password' => '',
 	'database' => 'ankieta'
 ];
+?>
